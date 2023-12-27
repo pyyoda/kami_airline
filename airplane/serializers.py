@@ -4,6 +4,7 @@ from .models import Airplane
 
 class AirplaneSerializer(serializers.ModelSerializer):
     """Airplane default serializer class"""
+
     fuel_tank_capacity: int = serializers.SerializerMethodField()
     fuel_consumption_per_minute: float = serializers.SerializerMethodField()
 

@@ -11,6 +11,7 @@ from .serializers import AirplaneSerializer
 
 class AirplaneViewSet(viewsets.ModelViewSet):
     """Airplane viewset class"""
+
     queryset = Airplane.objects.all()
     ordering = ["airplane_id"]
     filter_backends = [OrderingFilter, SearchFilter]
